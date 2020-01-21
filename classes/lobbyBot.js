@@ -61,6 +61,7 @@ class LobbyBot {
     }).then(data => {
       this.state = "creatingLobby";
       this.name = data;
+      console.log(data)
       return data
     }).catch(err => {
       console.error(err)
@@ -147,7 +148,7 @@ class LobbyBot {
 
 module.exports = {
   async createConnection(login, name) {
-    var socket = io.connect("http://127.0.0.1:54221");
+    var socket = io.connect("http://68.99.188.33:54221");
     socket.on("connect", () => {
       socket.emit("authenticate", login);
     })
