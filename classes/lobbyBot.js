@@ -36,6 +36,7 @@ class LobbyBot {
       return data
     }).catch(err => {
       console.error(err)
+      return false
     })
   }
 
@@ -51,6 +52,7 @@ class LobbyBot {
       return data
     }).catch(err => {
       console.error(err)
+      return false
     })
   }
 
@@ -65,6 +67,7 @@ class LobbyBot {
       return data
     }).catch(err => {
       console.error(err)
+      return false
     })
   }
 
@@ -79,6 +82,7 @@ class LobbyBot {
       return data
     }).catch(err => {
       console.error(err)
+      return false
     })
   }
 
@@ -94,6 +98,7 @@ class LobbyBot {
       return data
     }).catch(err => {
       console.error(err)
+      return false
     })
   }
 
@@ -109,6 +114,7 @@ class LobbyBot {
       return data
     }).catch(err => {
       console.error(err)
+      return false
     })
   }
 
@@ -124,6 +130,7 @@ class LobbyBot {
       return data
     }).catch(err => {
       console.error(err)
+      return false
     })
   }
 
@@ -138,6 +145,7 @@ class LobbyBot {
       return data
     }).catch(err => {
       console.error(err)
+      return false
     })
   }
 
