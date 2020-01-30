@@ -31,7 +31,7 @@ class LobbyBot {
   async getState() {
     return await this.awaitSocket({
       emit: "getState",
-      emitData: ""
+      emitData: this.name
     }).then(data => {
       return data
     }).catch(err => {
@@ -63,7 +63,6 @@ class LobbyBot {
     }).then(data => {
       this.state = "creatingLobby";
       this.name = data;
-      console.log(data)
       return data
     }).catch(err => {
       console.error(err)
